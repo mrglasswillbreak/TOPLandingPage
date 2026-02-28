@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css">
-	<title>untitled</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TOP Landing Page</title>
 </head>
-
 <body>
-	<div class="container1">
-		<div class="header">
-			<strong class="logo">Header Logo</strong>
-			<ul>
-				<li><a href="#">Header Link 1</a></li>
-				<li><a href="#">Header Link 2</a></li>
-				<li><a href="#">Header Link 3</a></li>
-			</ul>
-		</div>
-		<div class="twoparter">
-			<div class="bunchbutton">
-				<h1>This Website is Awesome</h1>
-				<p class="t1">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-				<button class="signup">Sign up</button>
-			</div>
-			<img class="pic" src="01.png" height="250px" width="300px">
-		</div>	
-	</div>
-	
-	<div class="container2">
-    <h2>Some Random Information</h2>
-    <div class="gallery">
-        <div class="gitems">
-            <div class="box"></div>
-            <p class="boxtext">this is some subtext under an illustration or image</p>
-        </div>
+  <header class="site-header">
+    <a class="logo" href="index.html">Header Logo</a>
 
-        <div class="gitems">
-            <div class="box"></div>
-            <p class="boxtext">this is some subtext under an illustration or image</p>
-        </div>
+    <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-        <div class="gitems">
-            <div class="box"></div>
-            <p class="boxtext">this is some subtext under an illustration or image</p>
-        </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-        <div class="gitems">
-            <div class="box"></div>
-            <p class="boxtext">this is some subtext under an illustration or image</p>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" aria-pressed="false">🌙 Dark</button>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-text">
+        <p class="eyebrow">Launch faster</p>
+        <h1>This Website is Awesome</h1>
+        <p>
+          Build trust and capture attention with a clear value proposition,
+          polished visuals, and conversion-focused calls-to-action.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="features.html">Explore Features</a>
+          <a class="btn btn-outline" href="#newsletter">Get Updates</a>
         </div>
-    </div>
-	</div>
-	
-	<div class="container3">
-		<div class="textholder">
-			<strong class="maintext">This is an inspiring quote, or a testimonial from a customer. Maybe its just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</strong>
-			<p class="lowtext">-Thor, God of Thunder</p>
-		</div>
-	</div>
-	
-	<div class="container4">
-		<div class="bluebox">
-			<div class="contentholder">
-				<div class="words">
-					<strong class="bigtext">Call to action. It's time!</strong>
-					<p class="smalltext">Sign up for our product by clicking that button right over there!</p>
-				</div>
-				<button class="press">Sign up</button>
-			</div>
-		</div>
-	</div>
-	
-	<div class="footer">Copyright © The Odin Project 2021</div>
-	
+      </div>
+      <img class="hero-image" src="01.png" alt="A colorful illustrative placeholder image" />
+    </section>
+
+    <section class="section" id="highlights">
+      <h2>Some Random Information</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <div class="card-icon"></div>
+          <h3>Fast Setup</h3>
+          <p>Get your first page live quickly with clean structure and reusable sections.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"></div>
+          <h3>Responsive Layout</h3>
+          <p>Looks good on desktop, tablet, and mobile without extra custom tuning.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"></div>
+          <h3>Accessible Design</h3>
+          <p>Clear hierarchy, meaningful labels, and readable contrast across themes.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon"></div>
+          <h3>Easy to Extend</h3>
+          <p>Add new pages and sections without restructuring the whole project.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote section">
+      <blockquote>
+        “This is an inspiring quote, or a testimonial from a customer. Maybe it is just filling up space,
+        or maybe people will actually read it. Either way, it looks great.”
+      </blockquote>
+      <p class="quote-author">— Thor, God of Thunder</p>
+    </section>
+
+    <section class="cta section">
+      <div>
+        <h3>Call to action. It&apos;s time!</h3>
+        <p>Sign up for our product by clicking that button right over there.</p>
+      </div>
+      <a class="btn btn-outline" href="contact.html">Sign up</a>
+    </section>
+
+    <section class="section" id="newsletter">
+      <h2>Stay in the loop</h2>
+      <p class="section-subtitle">Join our newsletter for updates, release notes, and useful tips.</p>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <button id="back-to-top" class="icon-btn back-to-top" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    Copyright © The Odin Project <span id="year"></span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
