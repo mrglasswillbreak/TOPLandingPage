@@ -16,14 +16,16 @@ It includes reusable page structure, responsive layouts for desktop/mobile, dark
 
 ## Screenshots
 
+> These are embedded images (not plain links), so they should render directly in GitHub README view.
+
 ### Home Page (Desktop)
-![Home page desktop screenshot](01.png)
+<img src="./01.png" alt="Home page desktop screenshot" width="100%" />
 
-### Feature/Section Preview
-![Feature section screenshot](02.png)
+### Features Preview
+<img src="./02.png" alt="Features section screenshot" width="100%" />
 
-### Mobile-Style Preview
-![Mobile-oriented preview screenshot](untitled.jpeg.png)
+### Mobile Preview
+<img src="./untitled.jpeg.png" alt="Mobile-oriented preview screenshot" width="360" />
 
 ## Tech Stack
 - **HTML5**
