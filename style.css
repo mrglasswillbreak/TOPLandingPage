@@ -2,11 +2,45 @@
 	padding: 0;
 	margin: 0;
 	font-family: Arial;
-	box-sizing: border-box;;
+	box-sizing: border-box;
+}
+
+:root {
+	--page-bg: #ffffff;
+	--surface: #ffffff;
+	--header-bg: #1F2937;
+	--header-text: #F9FAF8;
+	--muted-text: #E5E7EB;
+	--primary-text: #1F2937;
+	--accent: #3882F6;
+	--quote-bg: #E5E7EB;
+	--footer-bg: #1F2937;
+	--footer-text: #ffffff;
+	--box-text: #000000;
+}
+
+body {
+	background: var(--page-bg);
+	color: var(--primary-text);
+	scroll-behavior: smooth;
+}
+
+body.dark-mode {
+	--page-bg: #0f172a;
+	--surface: #111827;
+	--header-bg: #020617;
+	--header-text: #f8fafc;
+	--muted-text: #cbd5e1;
+	--primary-text: #e2e8f0;
+	--accent: #60a5fa;
+	--quote-bg: #1e293b;
+	--footer-bg: #020617;
+	--footer-text: #e2e8f0;
+	--box-text: #e2e8f0;
 }
 
 .container1 {
-	background: #1F2937;
+	background: var(--header-bg);
 	display: flex;
 	flex-direction: column;
 	align-items: space-between;
@@ -17,11 +51,12 @@
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 50px;
 }
 
 .logo {
-	color: #F9FAF8;
+	color: var(--header-text);
 	margin: 16px;
 	font-size: 21px;
 }
@@ -31,7 +66,6 @@ ul {
 	list-style-type: none;
 	margin: 16px;
 	gap: 16px;
-	
 }
 
 li {
@@ -41,8 +75,18 @@ li {
 
 a {
 	text-decoration: none;
-	color: #E5E7EB;
+	color: var(--muted-text);
 	font-size: 15px;
+}
+
+.theme-toggle {
+	margin-right: 16px;
+	padding: 6px 12px;
+	border: 1px solid var(--muted-text);
+	background: transparent;
+	color: var(--muted-text);
+	border-radius: 6px;
+	cursor: pointer;
 }
 
 /* after header */
@@ -53,30 +97,29 @@ a {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	gap: 15px
+	gap: 15px;
 }
 
 .bunchbutton {
-	
 	width: 300px;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 }
 
 h1 {
-	color: white;
+	color: var(--header-text);
 	font-size: 45px;
 }
 
 .t1 {
-	color: #E5E7EB;
+	color: var(--muted-text);
 	margin-bottom: 10px;
 	font-size: 15px;
 }
 
 .signup {
 	padding: 5px 20px;
-	background-color: #3882F6;
+	background-color: var(--accent);
 	color: white;
 	border-radius: 5px;
 	border: none;
@@ -92,19 +135,19 @@ h1 {
 /*second section*/
 
 .container2 {
-	color: white;
+	background: var(--surface);
+	color: var(--primary-text);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 40px;
-	
 }
 
 h2 {
 	text-align: center;
-	color: #1F2937;
+	color: var(--primary-text);
 	font-size: 30px;
-	margin: 40px 0px;
+	margin: 40px 0;
 }
 
 .gallery {
@@ -119,25 +162,25 @@ h2 {
 	flex-direction: column;
 	width: 100px;
 	justify-content: center;
-	align-items: center
+	align-items: center;
 }
 
 .box {
 	padding: 60px;
-	border: 3px solid #3882F6;
-	border-radius: 15px;;
+	border: 3px solid var(--accent);
+	border-radius: 15px;
 	margin-bottom: 10px;
 }
 
 .boxtext {
-	color: black;
+	color: var(--box-text);
 	text-align: center;
 }
 
-/*third sdction*/
+/*third section*/
 
 .container3 {
-	background: #E5E7EB;
+	background: var(--quote-bg);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -146,7 +189,7 @@ h2 {
 
 .textholder {
 	padding: 40px 20px;
-	margin: 0px 90px;
+	margin: 0 90px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -154,7 +197,7 @@ h2 {
 }
 
 .maintext {
-	color: #1F2937;
+	color: var(--primary-text);
 	font-style: italic;
 	font-size: 26px;
 	font-weight: 100;
@@ -163,9 +206,10 @@ h2 {
 .lowtext {
 	align-self: flex-end;
 	font-weight: 800;
+	color: var(--primary-text);
 }
 
-/*fourth sdction*/
+/*fourth section*/
 
 .container4 {
 	padding: 60px 20px;
@@ -174,12 +218,13 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: var(--surface);
 }
 
 .bluebox {
 	border-radius: 8px;
 	padding: 20px;
-	background: #3882F6;
+	background: var(--accent);
 	display: flex;
 	width: 630px;
 }
@@ -200,7 +245,7 @@ h2 {
 
 .bigtext {
 	color: #F9FAF8;
-	font-weight: 900px;
+	font-weight: 900;
 }
 
 .smalltext {
@@ -209,12 +254,13 @@ h2 {
 
 .press {
 	margin-right: 30px;
-	background-color: #3882F6;
+	background-color: transparent;
 	border: 2px solid white;
 	border-radius: 8px;
 	color: white;
 	padding: 5px 30px;
 	max-height: 40px;
+	cursor: pointer;
 }
 
 /*footer*/
@@ -222,9 +268,30 @@ h2 {
 .footer {
 	padding: 30px;
 	width: 100%;
-	color: white;
+	color: var(--footer-text);
 	display: flex;
-	background: #1F2937;
+	background: var(--footer-bg);
 	justify-content: center;
-	align-items: center
+	align-items: center;
+}
+
+@media (max-width: 700px) {
+	.header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.theme-toggle {
+		margin: 0 0 16px;
+	}
+
+	.contentholder {
+		margin-left: 0;
+		gap: 16px;
+		flex-direction: column;
+	}
+
+	.press {
+		margin-right: 0;
+	}
 }
