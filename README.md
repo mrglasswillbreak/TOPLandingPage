@@ -1,117 +1,78 @@
-# 🌐 Responsive Landing Page — Flexbox Layout
+# TOP Landing Page
 
-A modern, responsive landing page built using **HTML5 and CSS3 (Flexbox)**.
+A professional, multi-page landing page template built with **HTML5**, **CSS3**, and **vanilla JavaScript**.
 
-This project demonstrates layout structure, spacing, alignment, and responsive design patterns through a multi-section web page including navigation, hero section, content grid, testimonial, call-to-action, and footer.
+This version improves project organization and includes README screenshots rendered from live runtime pages using remote preview URLs (no binary assets required in PR).
 
----
+## Live Demo
+- **GitHub Pages:** https://mrglasswillbreak.github.io/TOPLandingPage/
 
-## 🚀 Live Demo
+## Features
+- Multi-page structure (`index`, `about`, `features`, `contact`)
+- Centralized assets (`assets/css`, `assets/js`, `assets/images`)
+- Responsive desktop/mobile layout
+- Theme toggle with `localStorage` persistence
+- Mobile navigation toggle with ARIA state updates
+- Newsletter + contact form client-side validation feedback
+- Back-to-top button and dynamic footer year
 
-👉 https://mrglasswillbreak.github.io/TOPLandingPage/
+## Improved Folder Structure
 
----
-
-## 📁 Repository
-
-👉 https://github.com/mrglasswillbreak/TOPLandingPage
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML5**
-- **CSS3**
-- **Flexbox for layout**
-- Semantic, responsive structure
-
----
-
-## 📐 Page Structure
-
-The layout is divided into well-defined sections:
-
-### 1️⃣ Header Section
-
-- Logo and navigation links
-- Dark background with light text
-
-### 2️⃣ Hero Section
-
-- Bold headline
-- Subtext
-- Sign-up button
-- Illustrative image
-
-### 3️⃣ Information Grid
-
-- Section title
-- Flexbox-based gallery
-- Placeholder content with subtext
-
-### 4️⃣ Testimonial Section
-
-- Centered quote
-- Author attribution
-
-### 5️⃣ Call-to-Action (CTA) Section
-
-- Prominent background
-- Message and button
-
-### 6️⃣ Footer
-
-- Simple copyright
-- Consistent dark theme
-
----
-
-## 🎯 Key Concepts Practiced
-
-- Layout using **Flexbox**
-- Responsive wrapping via `flex-wrap`
-- Consistent spacing using `gap`, margins, and padding
-- Button and navigation styling
-- Box model control (`box-sizing: border-box`)
-- Section separation and visual hierarchy
-
----
-
-## 📱 Responsive Design
-
-- Flexible widths (`100%`)
-- Flexbox wrapping for smaller screens
-- Scalable spacing and alignment
-- Viewport meta included for proper scaling
-
----
-
-## 📂 Project Structure
+```text
 TOPLandingPage/
-- │── index.html
-- │── style.css
-- │── 01.png
-- │── README.md
+├── index.html
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   └── features.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── 01.png
+│       ├── 02.png
+│       └── untitled.jpeg.png
+└── README.md
+```
+
+## Runtime Screenshots
+
+> These are generated from the live deployed pages and embedded directly in README.
+
+### Home (Desktop)
+![Runtime screenshot of home page on desktop](https://image.thum.io/get/width/1400/https://mrglasswillbreak.github.io/TOPLandingPage/)
+
+### Features Page (Desktop)
+![Runtime screenshot of features page on desktop](https://image.thum.io/get/width/1400/https://mrglasswillbreak.github.io/TOPLandingPage/pages/features.html)
+
+### Contact Page (Mobile)
+![Runtime screenshot of contact page on mobile viewport](https://image.thum.io/get/width/390/https://mrglasswillbreak.github.io/TOPLandingPage/pages/contact.html)
+
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+## Getting Started
+
+### 1) Clone
+```bash
+git clone https://github.com/mrglasswillbreak/TOPLandingPage.git
+cd TOPLandingPage
+```
+
+### 2) Run locally
+```bash
+python3 -m http.server 8080
+```
+
+### 3) Open in browser
+- `http://127.0.0.1:8080/index.html`
+
+## Author
+**Moe**
 
 ---
-
-## 🧪 Potential Improvements
-
-- Add mobile breakpoint media queries
-- Enhance accessibility (semantic HTML & ARIA)
-- Add hover animations for interactive elements
-- Integrate CSS Grid for advanced layout control
-- Add smooth scrolling effects
-- Implement dark/light mode switch
-
----
-
-## 👤 Author
-
-**Moe**  
-Student Developer • Web & JavaScript Focused  
-Aspiring Full-Stack Developer
-
----
-
-⭐ If you enjoyed this project or found it useful, please ⭐Star the repository!
+If this project helped you, consider giving it a ⭐ on GitHub.

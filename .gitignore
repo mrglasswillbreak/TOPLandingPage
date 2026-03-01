@@ -1,0 +1,13 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Python cache / temp
+__pycache__/
+*.pyc
+
+# Local preview and debug artifacts
+*.log
+
+# Runtime screenshots are generated for docs troubleshooting only; do not commit binaries
+assets/screenshots/
