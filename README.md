@@ -6,47 +6,68 @@ It includes reusable page structure, responsive layouts for desktop/mobile, dark
 ## Live Demo
 - **GitHub Pages:** https://mrglasswillbreak.github.io/TOPLandingPage/
 
-## Project Highlights
-- Multi-page structure: Home, About, Features, Contact
-- Responsive navigation with mobile menu toggle
-- Light/Dark theme toggle with persisted preference (`localStorage`)
-- Reusable UI sections (hero, cards, quote, CTA, forms)
-- Client-side form feedback for newsletter/contact forms
+## Features
+- Multi-page structure (`index`, `about`, `features`, `contact`)
+- Centralized assets (`assets/css`, `assets/js`, `assets/images`)
+- Responsive desktop/mobile layout
+- Theme toggle with `localStorage` persistence
+- Mobile navigation toggle with ARIA state updates
+- Newsletter + contact form client-side validation feedback
 - Back-to-top button and dynamic footer year
 
-## Screenshots
-
-> These are embedded images (not plain links), so they should render directly in GitHub README view.
-
-### Home Page (Desktop)
-<img src="./01.png" alt="Home page desktop screenshot" width="100%" />
-
-### Features Preview
-<img src="./02.png" alt="Features section screenshot" width="100%" />
-
-### Mobile Preview
-<img src="./untitled.jpeg.png" alt="Mobile-oriented preview screenshot" width="360" />
-
-## Tech Stack
-- **HTML5**
-- **CSS3**
-- **JavaScript (ES6+)**
-
-## Project Structure
+## Folder Structure
 
 ```text
 TOPLandingPage/
 ├── index.html
-├── about.html
-├── features.html
-├── contact.html
-├── style.css
-├── script.js
-├── 01.png
-├── 02.png
-├── untitled.jpeg.png
+├── pages/
+│   ├── about.html
+│   ├── contact.html
+│   └── features.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       ├── 01.png
+│       ├── 02.png
+│       └── untitled.jpeg.png
 └── README.md
 ```
+
+## Runtime Screenshots
+
+### Home (Desktop)
+![Runtime screenshot of home page on desktop](https://image.thum.io/get/width/1400/https://mrglasswillbreak.github.io/TOPLandingPage/)
+
+### Features Page (Desktop)
+![Runtime screenshot of features page on desktop](https://image.thum.io/get/width/1400/https://mrglasswillbreak.github.io/TOPLandingPage/pages/features.html)
+
+### Contact Page (Mobile)
+![Runtime screenshot of contact page on mobile viewport](https://image.thum.io/get/width/390/https://mrglasswillbreak.github.io/TOPLandingPage/pages/contact.html)
+
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+## Core Pages
+- `index.html` — marketing-style landing page with CTA and newsletter form
+- `about.html` — organization overview and mission content
+- `features.html` — product features and boilerplate pricing cards
+- `contact.html` — contact form and support entry point
+
+## Accessibility & UX Notes
+- Navigation controls include ARIA labels/states
+- Form areas use semantic labels and validation handling
+- Layout adapts to narrow viewports with responsive breakpoints
+
+## Roadmap Ideas
+- Add real backend integration for form submissions
+- Add favicon, SEO metadata, and Open Graph tags
+- Add automated linting/format checks
+- Add componentized architecture (e.g., with a build tool)
 
 ## Getting Started
 
@@ -65,23 +86,6 @@ python3 -m http.server 8080
 
 Open:
 - `http://127.0.0.1:8080/index.html`
-
-## Core Pages
-- `index.html` — marketing-style landing page with CTA and newsletter form
-- `about.html` — organization overview and mission content
-- `features.html` — product features and boilerplate pricing cards
-- `contact.html` — contact form and support entry point
-
-## Accessibility & UX Notes
-- Navigation controls include ARIA labels/states
-- Form areas use semantic labels and validation handling
-- Layout adapts to narrow viewports with responsive breakpoints
-
-## Roadmap Ideas
-- Add real backend integration for form submissions
-- Add favicon, SEO metadata, and Open Graph tags
-- Add automated linting/format checks
-- Add componentized architecture (e.g., with a build tool)
 
 ## Author
 **Moe**  
